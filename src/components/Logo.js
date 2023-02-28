@@ -16,7 +16,8 @@ return(
 }
 
 const Section = styled.div`
-    width: 25%;
+    
+    width: 15%;
     background-color: red;
     display: flex;
     justify-content: center;
