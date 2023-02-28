@@ -55,12 +55,9 @@ export const GlobalStyle = createGlobalStyle`
   a {
   text-decoration: none;
   color: inherit;
-  transition: all 0.2s ease-in-out;
   target: _blank;
 }
 
-a:hover {
-  color: #F44336;
-}
+
 
 `;
