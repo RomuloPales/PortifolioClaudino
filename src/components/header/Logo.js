@@ -32,8 +32,7 @@ const LogoImagem = styled.img`
     width: 65%;
     height: 100%;
     margin: 0 auto;
-    object-fit: cover;
+    object-fit: contain;
     left: 0;
-
-
+    transform: scale(1.6);
 `

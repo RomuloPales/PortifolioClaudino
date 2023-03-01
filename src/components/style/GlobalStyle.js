@@ -58,10 +58,12 @@ export const GlobalStyle = createGlobalStyle`
   target: _blank;
   font-family: sans-serif;
     font-weight: 300;
+    
 }
 h1{
     font-family: sans-serif;
     font-weight: 400;
+    font-size: 20px;
 }
 
 
