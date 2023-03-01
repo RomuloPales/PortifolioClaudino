@@ -56,6 +56,12 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration: none;
   color: inherit;
   target: _blank;
+  font-family: sans-serif;
+    font-weight: 300;
+}
+h1{
+    font-family: sans-serif;
+    font-weight: 400;
 }
 
 

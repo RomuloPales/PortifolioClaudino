@@ -64,7 +64,7 @@ const MediaKit = styled.div`
   }
 
   .icon {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   a:hover {
@@ -83,13 +83,13 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-  margin-left: 30px;
+  margin-left: 10px;
   flex: 1;
 `;
 
 const IconWrapper = styled.div`
-  width: 48px;
-  height: 48px;
+  width: 35px;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;

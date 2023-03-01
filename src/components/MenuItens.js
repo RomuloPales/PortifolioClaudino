@@ -4,28 +4,44 @@ export default function MenuItens() {
   return (
     <>
       <ItensMenu>
-        <ItemUm> aaaasssaaaaaaaaaa</ItemUm>
-        <ItemDois> eeeeeeesdsdeeeeee </ItemDois>
+        <ItemUm>
+          <h1> Projetos elétricos</h1>
+        </ItemUm>
+        <ItemDois>
+          <h1> Contato</h1>
+        </ItemDois> 
       </ItensMenu>
     </>
   );
 }
 
 const ItensMenu = styled.div`
-width: 75%;
-display: flex;
-justify-content: space-around;
-`
-
+  width: 55%;
+  display: flex;
+  justify-content: space-around;
+  
+  h1:hover {
+    transition-delay: 0.03s;
+    color: #ffd700;
+    cursor: pointer;
+  }
+`;
 
 const ItemUm = styled.div`
-  background-color: yellow;
   width: 50%;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  :hover{
+  cursor: pointer;
+  }
 `;
 
 const ItemDois = styled.div`
   width: 50%;
   height: 50px;
-  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

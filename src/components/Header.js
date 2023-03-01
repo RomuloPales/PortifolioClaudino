@@ -7,23 +7,29 @@ export default function Header() {
   return (
     <>
       <Section>
+        <ContainerItens>
         <Logo />
         <MenuItens />
         <SocialMedia/>
+        </ContainerItens>
       </Section>
     </>
   );
 }
 
 const Section = styled.div`
-
-  
+  margin: 0 auto;
   display: flex;
-  background-color: pink;
-  height: 50px;
+  height: 45px;
   padding-left: 070px;
   padding-right: 070px;
   padding-top: 10px;
-
+  padding-bottom: 5px;
   
 `;
+const ContainerItens = styled.div`
+display: flex;
+margin: 0 auto;
+width: 80%;
+
+`
