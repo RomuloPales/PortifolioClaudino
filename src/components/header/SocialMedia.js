@@ -9,7 +9,11 @@ import {
 } from "ionicons/icons";
 
 const networks = [
-  { name: "Instagram",icon: logoInstagram,link: "https://www.instagram.com/"},
+  {
+    name: "Instagram",
+    icon: logoInstagram,
+    link: "https://www.instagram.com/",
+  },
   { name: "Facebook", icon: logoFacebook, link: "https://www.facebook.com/" },
   { name: "YouTube", icon: logoYoutube, link: "https://www.youtube.com/" },
   { name: "LinkedIn", icon: logoLinkedin, link: "https://www.linkedin.com/" },
@@ -26,7 +30,7 @@ function MyComponent(props) {
   const { icons } = props;
   return (
     <MediaKit>
-      <div className="meni">
+      
         <StyledUl>
           {icons.map((icon) => (
             <StyledLi key={icon.name}>
@@ -38,7 +42,7 @@ function MyComponent(props) {
             </StyledLi>
           ))}
         </StyledUl>
-      </div>
+      
     </MediaKit>
   );
 }
@@ -52,10 +56,11 @@ export default function SocialMedia() {
 }
 
 const MediaKit = styled.div`
+  
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 20%;
+  justify-content: space-around;  
+  width: 25%;
+   
 
   li:hover {
     box-shadow: 0 0 5px ${({ name }) => backgroundColors[name]};
@@ -83,7 +88,7 @@ const StyledUl = styled.ul`
 `;
 
 const StyledLi = styled.li`
-  margin-left: 10px;
+  margin-left: 25px;
   flex: 1;
 `;
 

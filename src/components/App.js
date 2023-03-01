@@ -1,4 +1,7 @@
-import Header from "./Header"
+import ContainerMain from "./ContainerMain"
+import Footer from "./Footer"
+import Header from "./header/Header"
+import Projetos from "./Projetos"
 
 export default function App(){
 
@@ -6,6 +9,9 @@ export default function App(){
 
         <> 
             <Header/>
+            <ContainerMain/>
+            <Projetos/>
+            <Footer/>
         </>
     )
 }

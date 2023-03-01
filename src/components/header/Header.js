@@ -18,6 +18,8 @@ export default function Header() {
 }
 
 const Section = styled.div`
+  justify-content: space-between;
+  
   margin: 0 auto;
   display: flex;
   height: 45px;
@@ -28,8 +30,10 @@ const Section = styled.div`
   
 `;
 const ContainerItens = styled.div`
+
 display: flex;
 margin: 0 auto;
-width: 80%;
+width: 90%;
+justify-content: center;
 
 `

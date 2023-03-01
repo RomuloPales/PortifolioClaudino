@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import React from "react"
-import Img from '../components/style/img/usaressa.jpeg';
+import Img from '../style/img/logo.png';
 
 export default function Logo(){
 
@@ -16,11 +16,12 @@ return(
 }
 
 const Section = styled.div`
+    
     width: 25%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-right: 10px;
     
     :hover{
     cursor: pointer;
@@ -33,6 +34,6 @@ const LogoImagem = styled.img`
     margin: 0 auto;
     object-fit: cover;
     left: 0;
-    top: 0;
+
 
 `
