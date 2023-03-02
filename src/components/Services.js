@@ -1,7 +1,29 @@
 import styled from "styled-components";
-import ideia from "../components/style/img/ideia.png";
-import treinamento from "./style/img/treinamento.png";
-import consultoria from "./style/img/consultoria.png";
+import ideiaImg from "../components/style/img/ideia.png";
+import treiningIMG from "./style/img/treinamento.png";
+import consultImg from "./style/img/consultoria.png";
+
+const services = [
+  {
+    image: ideiaImg,
+    title: "Projetos",
+    description:
+      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+  },
+  {
+    image: treiningIMG,
+    title: "Consultorias",
+    description:
+      "Consultoria particular online para solução de dúvidas e análise de projetos elétricos e SPDA.",
+  },
+  {
+    image: consultImg,
+    title: "Treinamento",
+    description:
+      "Treinamento de projetos elétricos em Revit Mep. Torne-se um especialista em projetos elétricos desenvolvidos em BIM.",
+  },
+  
+];
 
 export default function Services() {
   return (
@@ -11,32 +33,27 @@ export default function Services() {
       </Header>
       <MainContainer>
         <Content>
-          <div>
-            <img src={ideia} alt="Where does it come from?" />
-            <h3>Where does it come from?</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.
-            </p>
-          </div>
-
-          <div>
-            <img src={consultoria} alt="Where does it come from?" />
-            <h3>Where does it come from?</h3>
-            <p>Descrição do serviço 2</p>
-          </div>
-
-          <div>
-            <img src={treinamento} alt="Where does it come from?" />
-            <h3>Where does it come from?</h3>
-            <p>Descrição do serviço 3</p>
-          </div>
+          <ContendUper>
+            {services.map((service) => (
+              <div className="are1">
+                <div className="areaImagem">
+                  <Conteudo src={service.image}></Conteudo>
+                </div>
+                <div className="textTittle">
+                  {" "}
+                  <p>{service.title}</p>
+                </div>
+                <h3>{service.description}</h3>
+              </div>
+            ))}
+          </ContendUper>
         </Content>
       </MainContainer>
     </>
   );
 }
+
+
 
 const Header = styled.div`
   background-color: #363636;
@@ -55,25 +72,86 @@ const MainContainer = styled.div`
   background-color: #363636;
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 70px;
   padding-right: 70px;
   padding-top: 40px;
   padding-bottom: 31px;
-  height: 60vh;
   flex-direction: row;
+  align-items: center;
 `;
 
 const Content = styled.div`
-  background-color: pink;
   width: 60%;
+  height: auto
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 0 auto;
   padding: 0 20px;
-  img{
-  width: 30%;
-
-  }
+  word-wrap: break-word;
+  box-sizing: border-box
 `;
 
+const ContendUper = styled.div`
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  .are1 {
+    
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 20px;
+    
+  }
+  .area2 {
+    
+    padding: 10px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .area3 {
+    
+    padding: 10px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+ 
+  .textTittle{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    font-weight:200;
+}
+h3{
+  
+  text-align: justify;
+    color: #FFFFFF;
+    font-family: "Inter", Sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    
+
+}
+.areaImagem{
+    max-width: 10vh;
+    max-height: 10vh;
+    margin: 0 auto;
+    word-wrap: break-word;
+`;
+
+const Conteudo = styled.img`
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+`;
