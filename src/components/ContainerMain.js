@@ -15,7 +15,7 @@ export default function ContainerMain() {
             </Button>
           </SideA>
           <SideB>
-            <ImageBSide src={quadro} alt="quadro"/>
+            <ImageBSide src={quadro} alt="quadro" />
           </SideB>
         </Content>
       </Container>
@@ -24,8 +24,6 @@ export default function ContainerMain() {
 }
 
 const Container = styled.div`
-  
- 
   display: flex;
   justify-content: space-between;
   margin: 25px auto 0 auto;
@@ -37,7 +35,7 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  width: 70%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -85,13 +83,12 @@ const SideB = styled.div`
   width: 50%;
   display: flex;
   align-items: center;
-  
 `;
 
 const ImageBSide = styled.img`
-    max-width: 100%;
-    object-fit: cover;
-    transform: scale(0.9);
-    width: 80%;
-    margin: 0 auto;
-`
+  max-width: 100%;
+  object-fit: cover;
+  transform: scale(0.9);
+  width: 80%;
+  margin: 0 auto;
+`;
