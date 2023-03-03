@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import img from "./style/img/projetos.jpeg";
-import quadro from "./style/img/quadro.jpeg";
+import img from "../style/img/projetos.jpeg";
+import quadro from "../style/img/quadro.jpeg";
 
 export default function ContainerMain() {
   return (

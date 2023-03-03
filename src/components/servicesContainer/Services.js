@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import ideiaImg from "../components/style/img/ideia.png";
-import treiningIMG from "./style/img/treinamento.png";
-import consultImg from "./style/img/consultoria.png";
+import ideiaImg from "../style/img/ideia.png";
+import treiningIMG from "../style/img/treinamento.png";
+import consultImg from "../style/img/consultoria.png";
+import FooterServices from "./FooterServices";
 
 const services = [
   {
@@ -14,7 +15,7 @@ const services = [
     image: treiningIMG,
     title: "Consultorias",
     description:
-      "Consultoria particular online para solução de dúvidas e análise de projetos elétricos e SPDA.",
+      "Consultoria particular online para solução de dúvidas e análise de projetos elétricos e SPDAConsultoria particular online para solução de dúvidas e análise de projetos elétricos e .",
   },
   {
     image: consultImg,
@@ -35,8 +36,8 @@ export default function Services() {
         <Content>
           <ContendUper>
             {services.map((service) => (
-              <div className="are1">
-                <div className="areaImagem">
+              <div className="areaOne">
+                <div className="imageArea">
                   <Conteudo src={service.image}></Conteudo>
                 </div>
                 <div className="textTittle">
@@ -47,7 +48,9 @@ export default function Services() {
               </div>
             ))}
           </ContendUper>
+          <FooterServices/>
         </Content>
+  
       </MainContainer>
     </>
   );
@@ -56,7 +59,7 @@ export default function Services() {
 
 
 const Header = styled.div`
-  background-color: #363636;
+  background-color: #29282A;
   padding: 15px 0 0 0;
   font-family: "Open Sans", Sans-serif;
   font-size: 31px;
@@ -69,7 +72,7 @@ const Header = styled.div`
 `;
 
 const MainContainer = styled.div`
-  background-color: #363636;
+  background-color: #29282A;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -96,7 +99,7 @@ const ContendUper = styled.div`
   height: fit-content;
   display: flex;
   justify-content: space-around;
-  .are1 {
+  .areaOne {
     
     width: 33%;
     display: flex;
@@ -142,7 +145,7 @@ h3{
     
 
 }
-.areaImagem{
+.imageArea{
     max-width: 10vh;
     max-height: 10vh;
     margin: 0 auto;

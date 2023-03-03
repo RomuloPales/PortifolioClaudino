@@ -17,6 +17,7 @@ const networks = [
   { name: "Facebook", icon: logoFacebook, link: "https://www.facebook.com/" },
   { name: "YouTube", icon: logoYoutube, link: "https://www.youtube.com/" },
   { name: "LinkedIn", icon: logoLinkedin, link: "https://www.linkedin.com/" },
+  
 ];
 
 const backgroundColors = {

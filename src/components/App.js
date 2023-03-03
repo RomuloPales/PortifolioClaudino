@@ -1,8 +1,8 @@
-import ContainerMain from "./ContainerMain"
+import ContainerMain from "./mainContainer/ContainerMain"
 
 import Header from "./header/Header"
 
-import Services from "./Services"
+import Services from "./servicesContainer/Services"
 
 export default function App(){
 
