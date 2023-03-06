@@ -9,39 +9,39 @@ import claudinoTorreGrito from "../style/img/claudinoTorreGrito.jpeg";
 const services = [
   {
     image: claudinoMurilo,
-    title: "PROJETO PREDIAL - MACAÉ/RJ",
+    title: "Adesivar alguem do Risca",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "Ta pensando oq, o mlk é o brabo dos brabos, consegue converter todo mundo!",
   },
   {
     image: claudinoMuriloBia,
     title: "Ir em varias calouradas",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "Bons tempos que bebia e não lembrava que existia o amanhã",
   },
   {
     image: claudinoMuriloBia2,
     title: "Tirar foto com o taz",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "aqui vemos 3 jovens antes da bebedeira. duvido alguem lembrar oq aconteceu 2 horas depois dessa foto ser tirada.",
   },
   {
     image: claudinoTorre,
     title: "Ir na torre e falar que não tem medo",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "Mais conhecido como serjão berranteiro, mais conhecido como matador de onça AQUI TEM CORAGI. ",
   },
   {
     image: claudinoTorreGrito,
     title: "Mas ainda assim gritar como uma mocinha",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
   },
   {
     image: claudinoOlhar,
     title: "Beber pra krl",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "Olhe para alguem assim como ele olha para a bebida - quem lembra lembra",
   },
 ];
 const Service = ({ image, title, description }) => {
