@@ -31,7 +31,7 @@ const Container = styled.div`
   padding-right: 70px;
   padding-top: 40px;
   padding-bottom: 31px;
-  max-height: 60vh;
+  max-height: 45vh;
 `;
 
 const Content = styled.div`

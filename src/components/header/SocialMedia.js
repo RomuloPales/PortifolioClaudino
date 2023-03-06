@@ -17,7 +17,6 @@ const networks = [
   { name: "Facebook", icon: logoFacebook, link: "https://www.facebook.com/" },
   { name: "YouTube", icon: logoYoutube, link: "https://www.youtube.com/" },
   { name: "LinkedIn", icon: logoLinkedin, link: "https://www.linkedin.com/" },
-  
 ];
 
 const backgroundColors = {
@@ -31,19 +30,17 @@ function MyComponent(props) {
   const { icons } = props;
   return (
     <MediaKit>
-      
-        <StyledUl>
-          {icons.map((icon) => (
-            <StyledLi key={icon.name}>
-              <a href={icon.link} target="_blank" rel="noreferrer">
-                <IconWrapper name={icon.name}>
-                  <IonIcon icon={icon.icon} className="icon" />
-                </IconWrapper>
-              </a>
-            </StyledLi>
-          ))}
-        </StyledUl>
-      
+      <StyledUl>
+        {icons.map((icon) => (
+          <StyledLi key={icon.name}>
+            <a href={icon.link} target="_blank" rel="noreferrer">
+              <IconWrapper name={icon.name}>
+                <IonIcon icon={icon.icon} className="icon" />
+              </IconWrapper>
+            </a>
+          </StyledLi>
+        ))}
+      </StyledUl>
     </MediaKit>
   );
 }
@@ -57,11 +54,9 @@ export default function SocialMedia() {
 }
 
 const MediaKit = styled.div`
-  
   display: flex;
-  justify-content: space-around;  
-  width: 25%;
-   
+  justify-content: space-around;
+  width: 30%;
 
   li:hover {
     box-shadow: 0 0 5px ${({ name }) => backgroundColors[name]};
@@ -83,8 +78,8 @@ const MediaKit = styled.div`
 const StyledUl = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
+  justify-content: center;
+  padding: 5px;
   margin: 0;
 `;
 
@@ -94,6 +89,7 @@ const StyledLi = styled.li`
 `;
 
 const IconWrapper = styled.div`
+  background-color: #ffffff;
   width: 35px;
   height: 35px;
   display: flex;

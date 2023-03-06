@@ -72,6 +72,7 @@ const Header = styled.div`
 `;
 
 const MainContainer = styled.div`
+background-color: red;
   background-color: #29282A;
   display: flex;
   justify-content: space-between;
@@ -126,10 +127,11 @@ const ContendUper = styled.div`
   }
  
   .textTittle{
+
     color: #ffffff;
     text-align: center;
-    margin-top: 10px;
-    font-size: 30px;
+    
+    font-size: 25px;
     font-family: sans-serif;
     padding-bottom: 15px;
     font-weight:200;
@@ -147,7 +149,10 @@ h3{
 }
 .imageArea{
     max-width: 10vh;
-    max-height: 10vh;
+    max-height: 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     word-wrap: break-word;
 `;
@@ -156,5 +161,5 @@ const Conteudo = styled.img`
   display: flex;
   height: 100%;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 `;
