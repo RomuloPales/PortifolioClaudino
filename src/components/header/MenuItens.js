@@ -1,15 +1,20 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function MenuItens() {
   return (
     <>
       <ItensMenu>
         <ItemUm>
-          <h1> Projetos elétricos</h1>
+          <a href="#projetos">
+            <h1> Projetos elétricos</h1>
+          </a>
         </ItemUm>
         <ItemDois>
-          <h1> Contato</h1>
-        </ItemDois> 
+          <Link to="/contato">
+            <h1> Contato</h1>
+          </Link>
+        </ItemDois>
       </ItensMenu>
     </>
   );
@@ -19,6 +24,8 @@ const ItensMenu = styled.div`
   width: 55%;
   display: flex;
   justify-content: space-around;
+  opacity: 1;
+  animation: fadeIn 1s ease-in-out; 
   
   h1:hover {
     transition-delay: 0.03s;
@@ -33,8 +40,8 @@ const ItemUm = styled.div`
   justify-content: center;
   align-items: center;
   padding: 15px;
-  :hover{
-  cursor: pointer;
+  :hover {
+    cursor: pointer;
   }
 `;
 

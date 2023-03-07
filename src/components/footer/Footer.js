@@ -16,7 +16,8 @@ export default function Footer() {
           <p> Contato</p>
           <span>
             {" "}
-            <ion-icon icon={mail}></ion-icon> <p4>juniorbarretotj@hotmail.com</p4>{" "}
+            <ion-icon icon={mail}></ion-icon>{" "}
+            <p4>juniorbarretotj@hotmail.com</p4>{" "}
           </span>
         </FooterService>
       </ContentFooter>
@@ -27,7 +28,6 @@ export default function Footer() {
 const ContentFooter = styled.div`
   background-color: #29282a;
   width: 100%;
-  height: 100%;
 `;
 
 const FooterService = styled.div`
@@ -50,8 +50,8 @@ const FooterService = styled.div`
     line-height: 31px;
     color: #ffffff;
     font-style: normal;
-    ion-icon{
-    margin-right: 10px ;
+    ion-icon {
+      margin-right: 10px;
     }
   }
   p {
@@ -64,7 +64,6 @@ const FooterService = styled.div`
   }
 `;
 const FooterTitle = styled.div`
-  
   padding: 10px 20px 20px 10px;
   width: 100%;
   display: flex;
@@ -86,10 +85,9 @@ const NewSocialMedia = styled.div`
   justify-content: center;
   padding: 10px 20px 30px 20px;
 
-  li{
-    
+  li {
     margin-left: 10px;
-}
+  }
   .icon {
     font-size: 18px;
   }

@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom";
 import React from "react"
 import Img from '../style/img/logo.png';
 
@@ -6,9 +7,10 @@ export default function Logo(){
 
 return(
     <>
-    <Section>
-        
+    <Section >
+    <Link to="/">
     <LogoImagem src= {Img} alt=".logo"/>
+    </Link>
     </Section>
     </>
     
