@@ -6,7 +6,7 @@ export default function MenuItens() {
     <>
       <ItensMenu>
         <ItemUm>
-          <a href="#projetos">
+          <a href="#projetos" >
             <h1> Projetos elétricos</h1>
           </a>
         </ItemUm>
@@ -32,6 +32,8 @@ const ItensMenu = styled.div`
     color: #ffd700;
     cursor: pointer;
   }
+ 
+  
 `;
 
 const ItemUm = styled.div`
@@ -43,7 +45,12 @@ const ItemUm = styled.div`
   :hover {
     cursor: pointer;
   }
+  a[href="#projetos"]:hover {
+    transition: all 0.3s ease-in-out;
+    color: #ffd700;
+  }
 `;
+
 
 const ItemDois = styled.div`
   width: 50%;

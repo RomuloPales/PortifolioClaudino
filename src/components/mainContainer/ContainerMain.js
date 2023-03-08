@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import img from "../style/img/projetos.jpeg";
-import quadro from "../style/img/quadro.jpeg";
+// import quadro from "../style/img/quadro.jpeg";
+import painel from "../style/img/painel.png";
+import { Link } from "react-router-dom";
+
 
 export default function ContainerMain() {
   return (
@@ -10,12 +13,14 @@ export default function ContainerMain() {
           <SideA>
             <ImagemBox src={img} alt="imagem" />
             <h2> Especialista em projetos elétricos</h2>
-            <Button>
-              <h2>Entrar em Contato</h2>
-            </Button>
+            <Link to="/contato">
+              <Button>
+                <h3>Entrar em Contato</h3>
+              </Button>
+            </Link>
           </SideA>
           <SideB>
-            <ImageBSide src={quadro} alt="quadro" />
+            <ImageBSide src={painel} alt="quadro" />
           </SideB>
         </Content>
       </Container>
@@ -32,6 +37,10 @@ const Container = styled.div`
   padding-top: 40px;
   padding-bottom: 31px;
   max-height: 45vh;
+  a{
+  display: flex;
+  justify-content: center;
+  }
 `;
 
 const Content = styled.div`
@@ -53,24 +62,29 @@ const SideA = styled.div`
     font-family: sans-serif;
     font-size: 22px;
   }
+  
 `;
 
 const Button = styled.button`
-  margin: 0 auto;
-  padding: 0 10px;
-  padding: 0.5em 1em;
   font-size: 1em;
   font-family: "Inter", Sans-serif;
   font-weight: 800;
   text-transform: uppercase;
-  fill: #29282a;
   color: #29282a;
-  background-color: #ffb91d;
+  background-color: #FFA500	;
   border-radius: 5px;
   box-shadow: 0px 0px 22px 0px rgb(0 0 0 / 28%);
   word-break: break-all;
   display: inline-block;
-  padding: 30px 30px 30px 30px;
+  padding: 30px;
+  border: none;
+
+  h3 {
+    margin: 0 auto;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  
 `;
 
 const ImagemBox = styled.img`
@@ -80,15 +94,16 @@ const ImagemBox = styled.img`
 `;
 
 const SideB = styled.div`
-  width: 50%;
+  max-width: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const ImageBSide = styled.img`
   max-width: 100%;
-  object-fit: cover;
+  max-height: 100%;
+  height: 100%;
   transform: scale(0.9);
-  width: 80%;
-  margin: 0 auto;
 `;
