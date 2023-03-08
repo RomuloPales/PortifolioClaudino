@@ -54,6 +54,7 @@ export default function SocialMedia() {
 }
 
 const MediaKit = styled.div`
+  
   display: flex;
   justify-content: space-around;
   width: 30%;

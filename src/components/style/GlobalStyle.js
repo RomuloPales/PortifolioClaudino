@@ -67,5 +67,7 @@ h1{
 }
 
 
-
+html{
+scroll-behavior: smooth;
+}
 `;

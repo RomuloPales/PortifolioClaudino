@@ -101,7 +101,6 @@ const ContendUper = styled.div`
   display: flex;
   justify-content: space-around;
   .areaOne {
-    
     width: 33%;
     display: flex;
     flex-direction: column;
@@ -109,25 +108,7 @@ const ContendUper = styled.div`
     margin-right: 20px;
     
   }
-  .area2 {
-    
-    padding: 10px;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-  }
-  .area3 {
-    
-    padding: 10px;
-    width: 33%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-  }
- 
   .textTittle{
-
     color: #ffffff;
     text-align: center;
     
@@ -159,7 +140,8 @@ h3{
 
 const Conteudo = styled.img`
   display: flex;
-  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
   margin: 0 auto;
   margin-bottom: 0px;
 `;

@@ -55,7 +55,7 @@ const SideA = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
 
   h2 {
     margin: 0 auto;
@@ -76,16 +76,27 @@ const Button = styled.button`
   box-shadow: 0px 0px 22px 0px rgb(0 0 0 / 28%);
   word-break: break-all;
   display: inline-block;
-  padding: 30px;
+  padding: 2em 2em;
   border: none;
+  max-width: 100%;
 
   h3 {
     margin: 0 auto;
     font-family: sans-serif;
     font-size: 15px;
   }
-  
+
+  @media (max-width: 768px) {
+    padding: 0.8em 1.5em;
+    font-size: 0.8em;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.6em 1.2em;
+    font-size: 0.6em;
+  }
 `;
+
 
 const ImagemBox = styled.img`
   max-width: 100%;
@@ -104,6 +115,5 @@ const SideB = styled.div`
 const ImageBSide = styled.img`
   max-width: 100%;
   max-height: 100%;
-  height: 100%;
-  transform: scale(0.9);
-`;
+  height: auto;
+  `;
