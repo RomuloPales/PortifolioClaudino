@@ -29,6 +29,7 @@ export default function ContainerMain() {
 }
 
 const Container = styled.div`
+
   display: flex;
   justify-content: space-between;
   margin: 25px auto 0 auto;
@@ -41,16 +42,29 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   }
+  @media (max-width: 768px){
+    max-height: 85vh;
+  }
 `;
 
 const Content = styled.div`
+  
   width: 60%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    
+    box-sizing: border-box;
+    width: 100%;
+   
+  }
 `;
 
 const SideA = styled.div`
+
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -59,8 +73,12 @@ const SideA = styled.div`
 
   h2 {
     margin: 0 auto;
-    font-family: sans-serif;
-    font-size: 22px;
+    font-family: "Inter", Sans-serif;
+    font-size: 14px;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 40px;
   }
   
 `;
@@ -79,6 +97,7 @@ const Button = styled.button`
   padding: 2em 2em;
   border: none;
   max-width: 100%;
+  box-sizing: border-box;
 
   h3 {
     margin: 0 auto;
@@ -91,10 +110,6 @@ const Button = styled.button`
     font-size: 0.8em;
   }
 
-  @media (max-width: 480px) {
-    padding: 0.6em 1.2em;
-    font-size: 0.6em;
-  }
 `;
 
 
@@ -102,6 +117,10 @@ const ImagemBox = styled.img`
   max-width: 100%;
   object-fit: contain;
   transform: scale(0.9);
+
+  @media (max-width: 768px) {
+    transform: scale(0.8);
+  }
 `;
 
 const SideB = styled.div`
@@ -110,10 +129,17 @@ const SideB = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const ImageBSide = styled.img`
   max-width: 100%;
   max-height: 100%;
   height: auto;
+  @media (max-width: 768px) {
+    max-width: 100%
+    height: auto;
+  }
   `;
