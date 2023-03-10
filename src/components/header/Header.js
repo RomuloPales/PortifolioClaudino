@@ -3,7 +3,7 @@ import MenuItens from "./MenuItens";
 import SocialMedia from "./SocialMedia";
 import { Link } from "react-router-dom";
 import { IonIcon } from "@ionic/react";
-import { reorderFour, closeCircleOutline } from "ionicons/icons";
+import { reorderFour } from "ionicons/icons";
 import React from "react";
 import Img from '../style/img/logo.png';
 
