@@ -23,7 +23,6 @@ export default function MenuItens() {
 }
 
 const ItensMenu = styled.div`
-background-color: red;
   width: 55%;
   display: flex;
   justify-content: space-around;
