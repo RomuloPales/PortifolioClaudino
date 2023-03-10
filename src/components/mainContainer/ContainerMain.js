@@ -74,11 +74,17 @@ const SideA = styled.div`
   h2 {
     margin: 0 auto;
     font-family: "Inter", Sans-serif;
-    font-size: 14px;
+    font-size: 22px;
   }
   @media (max-width: 768px) {
     width: 100%;
     gap: 40px;
+
+    h2 {
+    margin: 0 auto;
+    font-family: "Inter", Sans-serif;
+    font-size: 14px;
+  }
   }
   
 `;
@@ -135,11 +141,13 @@ const SideB = styled.div`
 `;
 
 const ImageBSide = styled.img`
+
   max-width: 100%;
   max-height: 100%;
   height: auto;
   @media (max-width: 768px) {
     max-width: 100%
     height: auto;
+    margin-top: 20px;
   }
   `;

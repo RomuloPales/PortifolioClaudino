@@ -54,10 +54,9 @@ export default function SocialMedia() {
 }
 
 const MediaKit = styled.div`
-  
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 18%;
 
   li:hover {
     box-shadow: 0 0 5px ${({ name }) => backgroundColors[name]};
@@ -73,6 +72,9 @@ const MediaKit = styled.div`
     background-color: ${({ name }) => backgroundColors[name]};
     transform: scale(1.2);
     box-shadow: inset 0 0 0 2px ${({ name }) => backgroundColors[name]};
+  }
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
 
