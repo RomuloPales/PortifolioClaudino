@@ -2,6 +2,8 @@ import styled from "styled-components";
 import MenuItens from "./MenuItens";
 import SocialMedia from "./SocialMedia";
 import { Link } from "react-router-dom";
+import { IonIcon } from "@ionic/react";
+import { reorderFour, closeCircleOutline } from "ionicons/icons";
 import React from "react";
 import Img from '../style/img/logo.png';
 
@@ -14,7 +16,12 @@ export default function Header() {
             <LogoImagem src={Img} alt=".logo" />
           </LogoSection>
           <MenuItens />
+          <ButtonMenu>
+          {" "}
+          <StyledIonIcon icon={reorderFour} />
+        </ButtonMenu>
           <SocialMedia />
+
         </ContainerItens>
       </Section>
     </>
@@ -41,7 +48,8 @@ const ContainerItens = styled.div`
   
   @media (max-width: 768px) {
     width: 100%;
-    
+    display: flex;
+    justify-content: space-around;
   }
 `;
 
@@ -60,4 +68,21 @@ const LogoImagem = styled.img`
   max-width: 200%;
   max-height: 200%;
   object-fit: contain;
+`;
+
+const ButtonMenu = styled.button`
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    display: block;
+  }
+`;
+
+const StyledIonIcon = styled(IonIcon)`
+  font-size: 1.5rem;
+  color: red;
 `;

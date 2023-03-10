@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { IonIcon } from "@ionic/react";
-import { reorderFour, closeCircleOutline } from "ionicons/icons";
+
+
 
 export default function MenuItens() {
   return (
@@ -17,16 +17,13 @@ export default function MenuItens() {
             <h1> Contato</h1>
           </Link>
         </ItemDois>
-        <ButtonMenu>
-          {" "}
-          <StyledIonIcon icon={reorderFour} />
-        </ButtonMenu>
       </ItensMenu>
     </>
   );
 }
 
 const ItensMenu = styled.div`
+background-color: red;
   width: 55%;
   display: flex;
   justify-content: space-around;
@@ -37,6 +34,11 @@ const ItensMenu = styled.div`
     transition-delay: 0.03s;
     color: #ffd700;
     cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    display: none;
+
+    
   }
   
 `;
@@ -53,11 +55,7 @@ const ItemUm = styled.div`
     color: #ffd700;
     cursor: pointer;
   }
-  @media (max-width: 768px) {
-    display: none;
-
-    
-  }
+  
 `;
 
 const ItemDois = styled.div`
@@ -66,24 +64,6 @@ const ItemDois = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 768px) {
-    display: none;
-  }
+  
 `;
 
-const ButtonMenu = styled.button`
-  background-color: #ffffff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  display: none;
-
-  @media (max-width: 768px) {
-    display: block;
-  }
-`;
-
-const StyledIonIcon = styled(IonIcon)`
-  font-size: 1.5rem;
-  color: red;
-`;
