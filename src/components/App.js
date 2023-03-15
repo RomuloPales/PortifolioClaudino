@@ -6,7 +6,6 @@ import Footer from "./footer/Footer";
 import ContainerMain from "./mainContainer/ContainerMain";
 import ContactPage from "./contactPage/ContactPage";
 
-
 export default function App() {
   return (
     <BrowserRouter>
@@ -26,3 +25,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+

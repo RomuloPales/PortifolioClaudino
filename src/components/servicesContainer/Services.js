@@ -23,12 +23,11 @@ const services = [
     description:
       "Treinamento de projetos elétricos em Revit Mep. Torne-se um especialista em projetos elétricos desenvolvidos em BIM.",
   },
-  
 ];
 
 export default function Services() {
   return (
-    <>
+    <FullContent>
       <Header>
         <h2> Conheça os serviços</h2>
       </Header>
@@ -48,18 +47,18 @@ export default function Services() {
               </div>
             ))}
           </ContendUper>
-          <FooterServices/>
         </Content>
-  
+        <FooterServices />
       </MainContainer>
-    </>
+    </FullContent>
   );
 }
 
-
-
+const FullContent = styled.div`
+  background-color: #29282a;
+`;
 const Header = styled.div`
-  background-color: #29282A;
+  background-color: #29282a;
   padding: 15px 0 0 0;
   font-family: "Open Sans", Sans-serif;
   font-size: 31px;
@@ -72,40 +71,51 @@ const Header = styled.div`
 `;
 
 const MainContainer = styled.div`
-background-color: red;
-  background-color: #29282A;
+  width: 100%
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 40px;
-  padding-bottom: 31px;
-  flex-direction: row;
+  padding: 40px 70px 31px 70px;
   align-items: center;
+  @media (max-width: 768px){
+  padding: 0;
+  }
 `;
 
 const Content = styled.div`
-  width: 60%;
-  height: auto
+
+  width: 100%;
+  height: auto;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  justify-content: center;
   padding: 0 20px;
   word-wrap: break-word;
-  box-sizing: border-box
+  box-sizing: border-box;
+
+  @media (max-width: 768px){
+  padding: 0;
+  }
 `;
 
 const ContendUper = styled.div`
+  width: 60%;
+  
   height: fit-content;
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 768px){
+    flex-direction: column; 
+    
+  }
+
   .areaOne {
-    width: 33%;
+    
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 10px;
     margin-right: 20px;
+  
     
   }
   .textTittle{
@@ -125,8 +135,7 @@ h3{
     font-size: 15px;
     font-weight: 300;
     line-height: 1.4;
-    
-
+   
 }
 .imageArea{
     max-width: 10vh;
@@ -136,6 +145,12 @@ h3{
     justify-content: center;
     margin: 0 auto;
     word-wrap: break-word;
+
+    @media (max-width: 768px){
+      
+    max-width: 30vh;
+    max-height: 34vh;
+  }
 `;
 
 const Conteudo = styled.img`

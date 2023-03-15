@@ -3,10 +3,13 @@ import { IonIcon } from "@ionic/react";
 import { logoInstagram, logoFacebook, logoWhatsapp } from "ionicons/icons";
 
 const networks = [
-  { name: "Instagram",icon: logoInstagram,link: "https://www.instagram.com/"},
+  {
+    name: "Instagram",
+    icon: logoInstagram,
+    link: "https://www.instagram.com/",
+  },
   { name: "Facebook", icon: logoFacebook, link: "https://www.facebook.com/" },
   { name: "whatsapp", icon: logoWhatsapp, link: "https://www.linkedin.com/" },
-  
 ];
 const backgroundColors = {
   Instagram: "#FF1493",
@@ -49,6 +52,8 @@ export default function FooterServices() {
 }
 
 const FooterService = styled.div`
+  background-color: #29282a;
+  width: 100%;
   padding-top: 50px;
   color: #ffffff;
   display: flex;
@@ -68,6 +73,8 @@ const FooterService = styled.div`
     font-weight: 600;
     text-transform: uppercase;
   }
+
+  
 `;
 const ContactMedia = styled.div`
   color: #29282a;

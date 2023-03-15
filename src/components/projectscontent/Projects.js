@@ -88,6 +88,11 @@ const Header = styled.div`
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (max-width: 768px){
+  display:none;
+  
+  }
 `;
 
 const Content = styled.div`
@@ -100,6 +105,11 @@ const Content = styled.div`
 
   word-wrap: break-word;
   box-sizing: border-box;
+
+  @media (max-width: 768px){
+  display:none;
+  
+  }
 `;
 const ContendUper = styled.div`
   width: 65%;

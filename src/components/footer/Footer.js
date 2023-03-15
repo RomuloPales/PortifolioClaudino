@@ -68,6 +68,9 @@ const FooterTitle = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: 768px) {
+    display: none;
+  }
 
   h1 {
     font-family: "Inter", sans-serif;
