@@ -148,8 +148,8 @@ h3{
 
     @media (max-width: 768px){
       
-    max-width: 30vh;
-    max-height: 34vh;
+    max-width: 20vh;
+    max-height: 28vh;
   }
 `;
 

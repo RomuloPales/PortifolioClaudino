@@ -79,6 +79,7 @@ const SideA = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     gap: 40px;
+    font-size: 28px;
 
     h2 {
     margin: 0 auto;
@@ -125,7 +126,7 @@ const ImagemBox = styled.img`
   transform: scale(0.9);
 
   @media (max-width: 768px) {
-    transform: scale(0.8);
+    transform: scale(1.2);
   }
 `;
 
@@ -136,7 +137,7 @@ const SideB = styled.div`
   justify-content: center;
   flex-direction: column;
   @media (max-width: 768px) {
-    max-width: 100%;
+    max-width: 150%;
   }
 `;
 
@@ -146,8 +147,8 @@ const ImageBSide = styled.img`
   max-height: 100%;
   height: auto;
   @media (max-width: 768px) {
-    max-width: 100%
-    height: auto;
+    max-width: 150%
+    max-height: 150%;
     margin-top: 20px;
   }
   `;
