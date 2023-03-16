@@ -3,25 +3,28 @@ import ideiaImg from "../style/img/ideia.png";
 import treiningIMG from "../style/img/treinamento.png";
 import consultImg from "../style/img/consultoria.png";
 import FooterServices from "./FooterServices";
+import claudinoMurilo from "../style/img/claudinoMurilo.jpg";
+import claudinoMuriloBia from "../style/img/claudinoMuriloBia.jpg";
+import claudinoMuriloBia2 from "../style/img/claudinoMuriloBia2.jpg";
 
 const services = [
   {
-    image: ideiaImg,
-    title: "Projetos",
+    image: claudinoMurilo,
+    title: "Lorem ipsum",
     description:
-      "Desenvolvimento de projetos elétricos e PDA – Proteção contra Descargas Atmosféricas, com a utilização de ferramentas BIM, visualização 3D, compatibilização de projetos, quantitativo de materiais, atendimento para todo o Brasil.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
   },
   {
-    image: treiningIMG,
-    title: "Consultorias",
+    image: claudinoMuriloBia,
+    title: "Lorem ipsum",
     description:
-      "Consultoria particular online para solução de dúvidas e análise de projetos elétricos e SPDAConsultoria particular online para solução de dúvidas e análise de projetos elétricos e .",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
   },
   {
-    image: consultImg,
-    title: "Treinamento",
+    image: claudinoMuriloBia2,
+    title: "Lorem ipsum",
     description:
-      "Treinamento de projetos elétricos em Revit Mep. Torne-se um especialista em projetos elétricos desenvolvidos em BIM.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
   },
 ];
 
@@ -72,7 +75,7 @@ const Header = styled.div`
 
 const MainContainer = styled.div`
   width: 100%
-  display: flex;
+  display:flex;
   margin: 0 auto;
   padding: 40px 70px 31px 70px;
   align-items: center;
@@ -82,7 +85,6 @@ const MainContainer = styled.div`
 `;
 
 const Content = styled.div`
-
   width: 100%;
   height: auto;
   display: flex;
@@ -91,14 +93,13 @@ const Content = styled.div`
   word-wrap: break-word;
   box-sizing: border-box;
 
-  @media (max-width: 768px){
-  padding: 0;
+  @media (max-width: 768px) {
+    padding: 0;
   }
 `;
 
 const ContendUper = styled.div`
   width: 60%;
-  
   height: fit-content;
   display: flex;
   justify-content: space-around;
@@ -109,7 +110,6 @@ const ContendUper = styled.div`
   }
 
   .areaOne {
-    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,10 +121,11 @@ const ContendUper = styled.div`
   .textTittle{
     color: #ffffff;
     text-align: center;
+    justify-content: center;
     
     font-size: 25px;
     font-family: sans-serif;
-    padding-bottom: 15px;
+    padding: 15px 0px 15px 0px;
     font-weight:200;
 }
 h3{
@@ -138,8 +139,9 @@ h3{
    
 }
 .imageArea{
-    max-width: 10vh;
-    max-height: 14vh;
+  background-color: red;
+    max-width: 16vh;
+    max-height: 16vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,16 +149,16 @@ h3{
     word-wrap: break-word;
 
     @media (max-width: 768px){
-      
     max-width: 20vh;
     max-height: 28vh;
   }
 `;
 
-const Conteudo = styled.img`
-  display: flex;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 0px;
-`;
+  const Conteudo = styled.img`
+  background-color: pink;
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+  `;

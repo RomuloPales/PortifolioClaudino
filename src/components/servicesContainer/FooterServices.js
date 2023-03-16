@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { IonIcon } from "@ionic/react";
-import { logoInstagram, logoFacebook, logoWhatsapp } from "ionicons/icons";
+import { logoInstagram, logoFacebook, logoWhatsapp,logoApple } from "ionicons/icons";
 
 const networks = [
   {
@@ -9,7 +9,7 @@ const networks = [
     link: "https://www.instagram.com/",
   },
   { name: "Facebook", icon: logoFacebook, link: "https://www.facebook.com/" },
-  { name: "whatsapp", icon: logoWhatsapp, link: "https://www.linkedin.com/" },
+  { name: "whatsapp", icon: logoWhatsapp, link: "https://www.linkedin.com/" },  
 ];
 const backgroundColors = {
   Instagram: "#FF1493",

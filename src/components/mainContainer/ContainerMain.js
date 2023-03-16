@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import img from "../style/img/projetos.jpeg";
-// import quadro from "../style/img/quadro.jpeg";
 import painel from "../style/img/painel.png";
 import { Link } from "react-router-dom";
 
