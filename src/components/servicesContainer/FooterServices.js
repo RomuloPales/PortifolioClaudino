@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { IonIcon } from "@ionic/react";
-import { logoInstagram, logoFacebook, logoWhatsapp,logoApple } from "ionicons/icons";
+import { logoInstagram, logoFacebook, logoWhatsapp,} from "ionicons/icons";
 
 const networks = [
   {
