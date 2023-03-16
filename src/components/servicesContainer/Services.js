@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import ideiaImg from "../style/img/ideia.png";
-import treiningIMG from "../style/img/treinamento.png";
-import consultImg from "../style/img/consultoria.png";
 import FooterServices from "./FooterServices";
 import claudinoMurilo from "../style/img/claudinoMurilo.jpg";
 import claudinoMuriloBia from "../style/img/claudinoMuriloBia.jpg";
@@ -154,11 +151,11 @@ h3{
   }
 `;
 
-  const Conteudo = styled.img`
+const Conteudo = styled.img`
   background-color: pink;
-    display: flex;
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 0px;
-  `;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 0px;
+`;
