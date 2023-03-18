@@ -50,7 +50,7 @@ export default function FormContact() {
     })
       .then((response) => {
         console.log("Form submitted successfully", response);
-        alert("Formulário enviado com sucesso!");
+        alert("Mensagem Enviada com sucesso")
         setName("");
         setEmail("");
         setMessage("");
