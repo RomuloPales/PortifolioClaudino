@@ -47,8 +47,8 @@ const FullPage = styled.div`
 `;
 
 const SideA = styled.div`
-  box-shadow: 1px 1px 5px red;
-  width: 50%;
+  box-shadow: 0px 2px 5px red;
+  min-width: 50%;
   height: 100%;
   @media (max-width: 768px) {
     width: 30%;

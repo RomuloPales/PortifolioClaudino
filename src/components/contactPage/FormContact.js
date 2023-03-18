@@ -9,6 +9,7 @@ export default function FormContact() {
   const [emailError, setEmailError] = useState("");
   const [message, setMessage] = useState("");
   const [messageError, setMessageError] = useState("");
+  const [isSent, setIsSent] = useState(false);
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -50,12 +51,27 @@ export default function FormContact() {
       .then((response) => {
         console.log("Form submitted successfully", response);
         alert("Formulário enviado com sucesso!");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setIsSent(true);
       })
       .catch((error) => {
         console.error("Error submitting form", error);
         alert("Houve um erro ao enviar o formulário.");
       });
   };
+
+  if (isSent) {
+    return (
+      <>
+        <RespostSent>
+          <p>Obrigado pela sua mensagem!</p>
+          <p>Retornaremos seu contato em breve!</p>
+        </RespostSent>
+      </>
+    );
+  }
 
   return (
     <>
@@ -151,3 +167,21 @@ const LabelError = styled.label`
   color: red;
   margin-bottom: 1em;
 `;
+
+const RespostSent = styled.div`
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p{
+  font-size: 18px;
+  color: #55a44e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 36px;
+  
+  }
+  
+`
