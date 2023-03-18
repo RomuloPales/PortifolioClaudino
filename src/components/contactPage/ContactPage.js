@@ -11,9 +11,10 @@ export default function ContactPage() {
         <FullPage>
           <SideA> aaaa</SideA>
           <SideB>
+            <h1>Envie Uma Mensagem</h1>
             <FormContact />
           </SideB>
-          <SideC> aaaaaaaaaaaa </SideC>
+        
         </FullPage>
       </Content>
 
@@ -41,12 +42,13 @@ const Content = styled.div`
 
 const FullPage = styled.div`
   display: flex;
-  width: 60%;
-  height: 80%;
+  min-width: 60%;
+  min-height: 80%;
 `;
 
 const SideA = styled.div`
-  width: 25%;
+  box-shadow: 1px 1px 5px red;
+  width: 50%;
   height: 100%;
   @media (max-width: 768px) {
     width: 30%;
@@ -57,21 +59,20 @@ const SideB = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px 30px 0px 30px;
-  width: 50%;
+  padding: 40px 70px;
+  min-width: 50%;
+  min-height: auto;
   box-sizing: border-box;
   box-shadow: 1px 1px 5px #ff8c00;
+  h1{
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #D2691E;
+  }
   @media (max-width: 768px) {
     width: 70%;
   }
 `;
 
-const SideC = styled.div`
-  width: 25%;
-  height: 100%;
-
-  @media (max-width: 768px) {
-    background-color: green;
-    display: none;
-  }
-`;
