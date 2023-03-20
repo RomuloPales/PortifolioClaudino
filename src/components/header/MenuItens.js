@@ -8,7 +8,7 @@ export default function MenuItens() {
     <>
       <ItensMenu>
         <ItemUm>
-          <a href="#projetos">
+          <a href=" /#projetos">
             <h1> Projetos elétricos</h1>
           </a>
         </ItemUm>
