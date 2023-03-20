@@ -122,7 +122,6 @@ const ContendUper = styled.div`
     width: 33.3%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .imageArea {
