@@ -14,7 +14,7 @@ export default function ContactPage() {
           <SideA>
             <h1>Entrar Em Contato</h1>
             <h2>
-              Envie um email para <span>Claudinobarretotj@gmail.com</span> ou use o form e nos deixe uma mensagem.
+              Envie um email para <span>Claudinobarretotj@gmail.com</span> ou use o form e deixe uma mensagem.
             </h2>
             <img src={claudinoSolo} alt="img"></img>
           </SideA>

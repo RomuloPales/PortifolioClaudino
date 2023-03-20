@@ -73,8 +73,8 @@ const LogoSection = styled(Link)`
 `;
 
 const LogoImagem = styled.img`
-  max-width: 200%;
-  max-height: 200%;
+  max-width: 150%;
+  max-height: 150%;
   object-fit: contain;
   @media (max-width: 768px) {
     max-width: 120%;
